@@ -113,7 +113,7 @@ main {
 .form-logo svg {
 	height: 20px;
 	width: 20px;
-	fill: var(--color-gray-400);
+	fill: #9aa0a6;
 }
 .search-input {
 	height: 100%;
