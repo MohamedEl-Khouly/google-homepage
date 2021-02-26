@@ -8,39 +8,57 @@
 body{
 	font-family: arial,sans-serif;
 	background-color: #fff;
-	color: #222;
+	color: rgba(0,0,0,0.87);
 	font-size: 14px;
 }
 
-/* Links styles*/
-ul {
-	list-style: none;
+/*-------Navbar Rules------*/
+header {
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+	text-align: right;
 }
 
-li a {
-	display: inline-block;
-	text-decoration: none;
+/* navbar ul rules */
+.navbar-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	padding: 15px;
+	padding-right: 30px;
+}
+
+/* navbar li*/
+.navbar-item {
+    list-style: none;
+}
+/* navbar anchors */
+.navbar-item a {
+    text-decoration: none;
+    display: inline-block;
 	color: rgba(0,0,0,0.87);
-	line-height: 24px;
-    vertical-align: middle;
+    text-transform: capitalize;
 }
-
-li a:hover {
-	text-decoration: underline;
+.navbar-item:not(:last-child) {
+	margin-right: 15px;
+  }
+/* adding hover effect*/
+.navbar-item a:hover{
+    text-decoration: underline;
 	cursor: pointer;
 }
-
 /* Profile button style*/
 .profile {
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
+	position: relative;
 }
 .profile a {
 	width: 100%;
 	height: 100%;
 }
-
 /* apps button style*/
 .app {
 	height: 30px;
