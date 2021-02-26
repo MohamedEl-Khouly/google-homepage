@@ -75,3 +75,37 @@ header {
 	transform: translate(-50%, -50%);
 	fill: rgba(0,0,0,0.87);
 }
+
+
+/*-------Footer Rules------*/
+footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+    align-items: center;
+}
+.footer-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+	padding: 15px;
+	padding-right: 30px;	
+}
+
+.footer-item a {
+	text-decoration: none;
+    display: inline-block;
+	color: #70757a;
+    text-transform: capitalize;
+}
+
+.footer-item a:hover{
+    text-decoration: underline;
+	cursor: pointer;
+}
+.footer-item:not(:last-child) {
+	margin-right: 15px;
+}
